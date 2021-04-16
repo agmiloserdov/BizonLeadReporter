@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         Bizon Reporter
-// @namespace    http://tampermonkey.net/
-// @version      0.3
-// @description  Скрипт для обработки отчетов сервиса Bizon
-// @author       Alexey Miloserdov a.g.miloserdov@gmail.com
-// @match        file:///*
-// @icon         https://www.google.com/s2/favicons?domain=tampermonkey.net
-// @grant        all
-// ==/UserScript==
-
 let MAX_MINUTES = 90;
 let MIN_MINUTES = 45;
 console.log("Start");

@@ -241,7 +241,7 @@ function prepare_report_block() {
         '<p>Хочет записаться: <span id="want_study_count"></span></p>' +
         `<p>До конца (<span id="finished_minutes">${MAX_MINUTES}</span> и более минут): <span id="finished"></span></p>` +
         `<p>Пришел (более <span id="min_minutes">${MIN_MINUTES}</span> минут): <span id="income"></span></p>` +
-        `<p>Мало (менее <span id="min_minutes">${MIN_MINUTES}</span> минут): <span id="small"></span></p>` +
+        `<p>Мало (менее <span id="min_small_minutes">${MIN_MINUTES}</span> минут): <span id="small"></span></p>` +
         `<p>До конца (из общего): <span id="finished_from_all_percent"></span> %</p>` +
         `<p>Хочет записаться (из общего): <span id="want_to_study_from_all_percent"></span> %</p>` +
         `<p>Хочет записаться (из завершивших): <span id="want_to_study_from_finished_percent"></span> %</p>` +
@@ -266,7 +266,7 @@ function prepare_report_block() {
         let minimum_time = document.getElementById('minimum_time').value;
         MIN_MINUTES = minimum_time;
         document.getElementById('min_minutes').innerText = MIN_MINUTES;
-        document.getElementById('min_minutes').innerText = MIN_MINUTES;
+        document.getElementById('min_small_minutes').innerText = MIN_MINUTES;
     });
 }
 prepare_report_block();

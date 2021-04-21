@@ -79,12 +79,15 @@ class Report {
     constructor(leads) {
         this.leads = leads;
         this.keywordMessages = [
+            "да, хотел бы",
+            "хочу в тест",
+            "жду звонка", 
+            "я готов записаться",
             "тестовый пери",
             "хочу запис",
             "хочу записаться на тест",
             "хочу на тест",
             "хочу тест",
-            "хочу на тест",
             "хочу запис",
             "приду в офис",
             "прийду в офис",
@@ -102,7 +105,13 @@ class Report {
             "запишите меня",
             "интересно запис",
             "да запис",
-            "записываться как"
+            "записываться как",
+            "тестовый период +",
+            "можете мне всю информацию по оплате и курсу скинуть",
+            "информация по оплате",
+            "информацию по оплате",
+            "информацию по курс"
+            "что нужно кроме уд"
         ]
     }
     clean_leads() {
@@ -248,7 +257,7 @@ function prepare_report_block() {
         '<hr>' +
         '<h3>Хотят записаться</h3>' +
         '<div id="want-to-sign"></div>' +
-        '<style>#report-block{position: fixed;right: 15px;top: 20px;width: 500px;border: 1px solid silver;padding: 10px;overflow-y: scroll;height: 800px;}' +
+        '<style>*{margin:0; padding:0;} #report-block{font-size:11px;position: fixed;right: 15px;top: 20px;width: 500px;border: 1px solid silver;padding: 10px;overflow-y: scroll;height: 100%;}' +
         '#getReport{margin: auto;border-radius: 5px;padding: 10px;cursor: pointer;}</style></div>';
     document.body.appendChild(report_block);
     let save_max = document.getElementById('save_max_time');

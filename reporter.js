@@ -257,7 +257,7 @@ function prepare_report_block() {
         '<hr>' +
         '<h3>Хотят записаться</h3>' +
         '<div id="want-to-sign"></div>' +
-        '<style>*{margin:0; padding:0;} #report-block{z-index:2;background-cloro:white;font-size:11px;position: fixed;right: 15px;top: 20px;width: 500px;border: 1px solid silver;padding: 10px;overflow-y: scroll;height: 90%;}' +
+        '<style>*{margin:0; padding:0;} #report-block{z-index:2;background-color:white;font-size:11px;position: fixed;right: 15px;top: 20px;width: 500px;border: 1px solid silver;padding: 10px;overflow-y: scroll;height: 90%;}' +
         '#getReport{margin: auto;border-radius: 5px;padding: 10px;cursor: pointer;}</style></div>';
     document.body.appendChild(report_block);
     let save_max = document.getElementById('save_max_time');

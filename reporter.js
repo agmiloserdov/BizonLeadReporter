@@ -1,5 +1,6 @@
 let MAX_MINUTES = 90;
 let MIN_MINUTES = 45;
+const IGNORE_EMAILS = ["fakeemail@gmail.com"]
 console.log("Start");
 
 class Lead {
@@ -119,7 +120,7 @@ class Report {
         for (let lead of this.leads) {
             let id = unique_leads.findIndex(l => l.equal(lead));
             if (id === -1) {
-                if (!lead.email.toLowerCase().includes('fake'))
+                if (!lead.email.toLowerCase().includes('fake') || !IGNORE_EMAILS.includes(lead.email.toLowerCase()))
                     unique_leads.push(lead);
             }
             else {
